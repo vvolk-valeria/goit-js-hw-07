@@ -45,7 +45,7 @@ function onModalClose(event) {
   }
 }
 
-window.addEventListener('keydown', onModalClose);
+window.addEventListener('keydown', onModalClose, {once:true});
 }
 
 
