@@ -73,3 +73,48 @@ window.addEventListener('keydown', onModalClose, {once:true});
 // galleryEl.insertAdjacentHTML('afterbegin', createItemsEl);
 //= -----------------------------------------------------
 
+//* через map
+// const makeItemsEl = (items) => {
+//   const result = items.map(item => 
+//     `<li class="gallery__item">
+//   <a class="gallery__link" href='${item.original}'>
+//     <img
+//       class="gallery__image"
+//       src='${item.preview}'
+//       data-source='${item.original}'
+//       alt='${item.description}'/>
+//   </a>
+// </li>`).join('');
+//   return result;
+// };
+
+// const makeItemsEl = (items) => items.map(item => 
+//     `<li class="gallery__item">
+//   <a class="gallery__link" href='${item.original}'>
+//     <img
+//       class="gallery__image"
+//       src='${item.preview}'
+//       data-source='${item.original}'
+//       alt='${item.description}'/>
+//   </a>
+// </li>`).join('');
+
+//* через reduce
+// const makeItemsEl = (items) => items.reduce((acc, item) => acc + 
+//     `<li class="gallery__item">
+//   <a class="gallery__link" href='${item.original}'>
+//     <img
+//       class="gallery__image"
+//       src='${item.preview}'
+//       data-source='${item.original}'
+//       alt='${item.description}'/>
+//   </a>
+// </li>`, '');
+// console.log(makeItemsEl(galleryItems));
+
+// const insertList = (string) => {
+//   galleryEl.insertAdjacentHTML('beforeend', string);
+// };
+
+// insertList(makeItemsEl(galleryItems));
+
